@@ -104,49 +104,49 @@ export const supplyGallery = [
     title: "Bơm Buồng Máy & Thiết Bị Động Lực (PUMP)",
     category: "ME & Engine Spares",
     specs: "PUMP: Taiko, Naniwa, Shinko...",
-    image: "/vattu1.jpg"
+    image: "./vattu1.jpg"
   },
   {
     id: "img-2",
     title: "Xích Neo & Thiết Bị Docking (Docking Spares)",
     category: "Docking Spares",
     specs: "Neo, Xích neo xuất xứ Trung Quốc chuẩn Class",
-    image: "/vattu2.jpg"
+    image: "./vattu2.jpg"
   },
   {
     id: "img-3",
     title: "Cụm Puly & Phụ Tùng Cơ Khí Chính Xác",
     category: "ME & G/E Spares",
     specs: "ME Spares parts: Mitsubishi, Akasaka, MAN B&W...",
-    image: "/vattu3.jpg"
+    image: "./vattu3.jpg"
   },
   {
     id: "img-4",
     title: "Cuộn Dây Cáp Thép & Dây Buộc Tàu Hàng Hải",
     category: "Docking Spares",
     specs: "Dây cáp thép & dây buộc tàu xuất xứ Trung Quốc",
-    image: "/vattu4.jpg"
+    image: "./vattu4.jpg"
   },
   {
     id: "img-5",
     title: "Đóng Gói Kiện Gỗ & Giao Nhận Cung Ứng Cảng",
     category: "Giao Nhận Cung Ứng",
     specs: "Đóng gói tiêu chuẩn xuất khẩu, giao tận mạn tàu",
-    image: "/vattu5.jpg"
+    image: "./vattu5.jpg"
   },
   {
     id: "img-6",
     title: "Gioăng Nắp Hầm Hàng Cao Su (Hatch Cover Gaskets)",
     category: "Docking Spares",
     specs: "Gioăng nắp hầm hàng xuất xứ Trung Quốc cam kết chất lượng",
-    image: "/vattu6.jpg"
+    image: "./vattu6.jpg"
   },
   {
     id: "img-7",
     title: "Vành Răng Quay Cẩu & Tăng Áp Turbocharger",
     category: "Ship Spares Parts",
     specs: "TURBOCHARGER: MHI, IHI, ABB...",
-    image: "/vattu7.jpg"
+    image: "./vattu7.jpg"
   }
 ];
 
@@ -155,21 +155,21 @@ export const repairGallery = [
     id: "repair-1",
     title: "Sửa Chữa & Lắp Đặt Hệ Thống Anten Vệ Tinh Intellian VSAT",
     subtitle: "Lắp đặt kỹ thuật trên cột ăng-ten tàu viễn dương",
-    image: "/suachua1.jpg",
+    image: "./suachua1.jpg",
     desc: "Đội ngũ kỹ sư Hoàng Yến Marine HP leo cột ăng-ten lắp đặt & bảo dưỡng vòm chảo Intellian VSAT trực tiếp tại cảng."
   },
   {
     id: "repair-2",
     title: "Bảo Dưỡng & Sửa Chữa Cơ Cấu Xuồng Cứu Sinh (Lifeboat Davits)",
     subtitle: "Thi công bảo dưỡng hệ thống an toàn boong",
-    image: "/suachua2.jpg",
+    image: "./suachua2.jpg",
     desc: "Kỹ thuật viên tay nghề cao thi công căn chỉnh, sửa chữa cơ cấu nâng hạ xuồng cứu sinh đảm bảo tiêu chuẩn SOLAS."
   },
   {
     id: "repair-3",
     title: "Sửa Chữa Cơ Khí Nặng & Siết Bu-lông Mặt Bích Cột Cẩu Tàu Biển",
     subtitle: "Sửa chữa cơ khí động lực & kết cấu tàu tại cầu cảng",
-    image: "/suachua3.jpg",
+    image: "./suachua3.jpg",
     desc: "Thi công siết mặt bích và vành răng quay cẩu hàng hải cho các tàu hàng Trung Quốc, Châu Âu cập cảng Việt Nam."
   }
 ];
@@ -216,7 +216,7 @@ export const productsData = [
     name: "ME Spares Parts (Mitsubishi, Akasaka, MAN B&W...)",
     tag: "Chính hãng / OEM",
     availability: "Sẵn hàng tại kho Hải Phòng",
-    image: "/vattu1.jpg",
+    image: "./vattu1.jpg",
     description: "Cung cấp phụ tùng máy chính ME Spares parts cho các hãng: Mitsubishi, Akasaka, MAN B&W... Hàng OEM và GENUINE với đầy đủ các chứng chỉ theo yêu cầu của khách hàng: CO, NK...",
     specs: [
       "Hãng máy chính: Mitsubishi, Akasaka, MAN B&W...",
@@ -233,7 +233,7 @@ export const productsData = [
     name: "G/E Spares Parts (Yanmar, Daihatsu...)",
     tag: "G/E Machine Parts",
     availability: "Sẵn hàng đủ chủng loại",
-    image: "/vattu3.jpg",
+    image: "./vattu3.jpg",
     description: "Phụ tùng máy phát điện G/E Spares parts cho các dòng động cơ Yanmar, Daihatsu... đáp ứng tiêu chuẩn vận hành an toàn hàng hải.",
     specs: [
       "Hãng máy phát: Yanmar, Daihatsu...",
@@ -250,7 +250,7 @@ export const productsData = [
     name: "Cụm Bơm Buồng Máy (Taiko, Naniwa, Shinko...)",
     tag: "PUMP Marine",
     availability: "Sẵn hàng tại kho",
-    image: "/vattu1.jpg",
+    image: "./vattu1.jpg",
     description: "Bơm hàng hải PUMP cho buồng máy của các thương hiệu hàng đầu: Taiko, Naniwa, Shinko... Phục vụ làm mát, nước biển, dầu FO/DO và ballast.",
     specs: [
       "Hãng sản xuất: Taiko, Naniwa, Shinko...",
@@ -267,7 +267,7 @@ export const productsData = [
     name: "Máy Lọc Dầu Oil Purifier (Mitsubishi, Alfa Laval...)",
     tag: "Oil Purifier",
     availability: "Phụ tùng & Trọn bộ",
-    image: "/vattu5.jpg",
+    image: "./vattu5.jpg",
     description: "Thiết bị & phụ tùng thay thế máy phân ly lọc dầu Oil Purifier: Mitsubishi, Alfa Laval... Lọc sạch hoàn toàn nước và cặn bẩn trong dầu FO/DO.",
     specs: [
       "Hãng sản xuất: Mitsubishi, Alfa Laval...",
@@ -284,7 +284,7 @@ export const productsData = [
     name: "Máy Nén Khí Chính Main Air Compressor (Tanabe, TMC...)",
     tag: "Air Compressor",
     availability: "Sẵn hàng tại kho",
-    image: "/vattu3.jpg",
+    image: "./vattu3.jpg",
     description: "Máy nén khí chính Main Air Compressor & phụ tùng van, piston cho các hãng Tanabe, TMC...",
     specs: [
       "Hãng sản xuất: Tanabe, TMC...",
@@ -301,7 +301,7 @@ export const productsData = [
     name: "Động Cơ Tăng Áp TURBOCHARGER (MHI, IHI, ABB...)",
     tag: "TURBOCHARGER",
     availability: "Sẵn hàng OEM & Genuine",
-    image: "/vattu7.jpg",
+    image: "./vattu7.jpg",
     description: "Phụ tùng tăng áp TURBOCHARGER cho các dòng máy chính & phụ từ các hãng: MHI, IHI, ABB... Cánh tuabin và vành răng quay gia công chính xác cao.",
     specs: [
       "Hãng sản xuất: MHI, IHI, ABB...",
@@ -320,7 +320,7 @@ export const productsData = [
     name: "Docking Spares: Neo & Xích Neo Hàng Hải (Xuất xứ Trung Quốc)",
     tag: "Cam kết chất lượng",
     availability: "Sẵn hàng đủ kích thước",
-    image: "/vattu2.jpg",
+    image: "./vattu2.jpg",
     description: "Docking spares: Neo, xích neo xuất xứ Trung Quốc... luôn đi kèm với cam kết về chất lượng. Đã được cung cấp cho rất nhiều đơn vị trong nước với phản hồi rất tốt về giá cả cũng như chất lượng.",
     specs: [
       "Xuất xứ: Trung Quốc (Hàng xuất khẩu cao cấp)",
@@ -337,7 +337,7 @@ export const productsData = [
     name: "Docking Spares: Dây Buộc Tàu & Dây Cáp Thép (Xuất xứ Trung Quốc)",
     tag: "Dây cáp hàng hải",
     availability: "Sẵn các cuộn lớn tại kho",
-    image: "/vattu4.jpg",
+    image: "./vattu4.jpg",
     description: "Dây buộc tàu & cuộn dây cáp thép Docking spares xuất xứ Trung Quốc... đi kèm cam kết chất lượng, dẻo dai và bám dính chịu tải tốt.",
     specs: [
       "Xuất xứ: Trung Quốc cao cấp",
@@ -354,7 +354,7 @@ export const productsData = [
     name: "Docking Spares: Gioăng Nắp Hầm Hàng Cao Su (Xuất xứ Trung Quốc)",
     tag: "Gioăng nắp hầm hàng",
     availability: "Sẵn hàng mét dài",
-    image: "/vattu6.jpg",
+    image: "./vattu6.jpg",
     description: "Gioăng nắp hầm hàng cao su xuất xứ Trung Quốc... kín nước tuyệt đối, bảo vệ hàng hóa khoang chứa an toàn xuyên suốt chuyến đi.",
     specs: [
       "Xuất xứ: Trung Quốc cao cấp",
@@ -373,7 +373,7 @@ export const productsData = [
     name: "Dịch Vụ Sửa Chữa & Lắp Đặt Hệ Thống Anten Vệ Tinh Trên Boong Tàu",
     tag: "Kỹ thuật viên kinh nghiệm",
     availability: "Hỗ trợ 24/7 tại mạn tàu",
-    image: "/suachua1.jpg",
+    image: "./suachua1.jpg",
     description: "Dịch vụ sửa chữa với các kỹ thuật viên có tay nghề cao, với kinh nghiệm làm việc nhiều năm trên tàu, tận tâm với công việc... Phục vụ chủ tàu Việt Nam và các công ty quản lý kỹ thuật nước ngoài (Trung Quốc, Châu Âu).",
     specs: [
       "Hạng mục: Sửa chữa, cân chỉnh & bảo dưỡng chảo thu VSAT, Starlink",
@@ -390,7 +390,7 @@ export const productsData = [
     name: "Dịch Vụ Bảo Dưỡng & Sửa Chữa Cơ Cấu Xuồng Cứu Sinh (Lifeboat Davit Repair)",
     tag: "Tiêu chuẩn SOLAS",
     availability: "Trực chiến tại cầu cảng",
-    image: "/suachua2.jpg",
+    image: "./suachua2.jpg",
     description: "Dịch vụ sửa chữa với các kỹ thuật viên có tay nghề cao, với kinh nghiệm làm việc nhiều năm trên tàu, tận tâm với công việc... Bảo dưỡng hệ thống tời, phanh và cơ cấu hạ xuồng cứu sinh.",
     specs: [
       "Hạng mục: Kiểm tra & sửa chữa tời xuồng cứu sinh, dây cáp hạ xuồng",
@@ -407,7 +407,7 @@ export const productsData = [
     name: "Dịch Vụ Sửa Chữa Cơ Khí Động Lực & Vành Răng Quay Cẩu Tàu Biển",
     tag: "Cơ khí nặng tàu biển",
     availability: "Cơ động khẩn cấp",
-    image: "/suachua3.jpg",
+    image: "./suachua3.jpg",
     description: "Dịch vụ sửa chữa với các kỹ thuật viên có tay nghề cao, với kinh nghiệm làm việc nhiều năm trên tàu, tận tâm với công việc... Thi công siết bu-lông lực, mặt bích và vành răng quay cẩu tàu.",
     specs: [
       "Hạng mục: Sửa chữa vành răng quay cẩu, siết mặt bích, cơ khí buồng máy",
@@ -426,7 +426,7 @@ export const productsData = [
     name: "Gói Mạng Vệ Tinh Starlink Maritime 1GB / Tháng",
     tag: "72.000 đ / Tháng",
     availability: "Kích hoạt nhanh 24/7",
-    image: "/pkg_1gb.jpg",
+    image: "./pkg_1gb.jpg",
     description: "Gói cước dữ liệu mạng vệ tinh Starlink Maritime 1GB/Tháng với chi phí tiết kiệm 72.000 đ / Tháng. Phù hợp duy trì kết nối cho tàu hàng, tàu cá, du thuyền.",
     specs: [
       "Dung lượng: 1GB / Tháng",
@@ -443,7 +443,7 @@ export const productsData = [
     name: "Gói Mạng Vệ Tinh Starlink Maritime 5GB",
     tag: "360.000 đ / Tháng",
     availability: "Sẵn sàng kích hoạt",
-    image: "/pkg_5gb.jpg",
+    image: "./pkg_5gb.jpg",
     description: "Gói dữ liệu mạng vệ tinh Starlink Maritime 5GB chỉ 360.000 đ / Tháng. Đảm bảo tốc độ truy cập internet ổn định và kết nối mượt mà.",
     specs: [
       "Dung lượng: 5GB / Tháng",
@@ -460,7 +460,7 @@ export const productsData = [
     name: "Gói Mạng Vệ Tinh Starlink Maritime 10GB",
     tag: "720.000 đ / Tháng",
     availability: "Kích hoạt tức thì",
-    image: "/pkg_10gb.jpg",
+    image: "./pkg_10gb.jpg",
     description: "Gói dữ liệu mạng vệ tinh 10GB với giá 720.000 đ / Tháng. Giải pháp kết nối internet vệ tinh tốc độ cao cho thuyền viên và ban quản lý tàu.",
     specs: [
       "Dung lượng: 10GB / Tháng",
@@ -477,7 +477,7 @@ export const productsData = [
     name: "Gói Mạng Vệ Tinh Starlink Maritime 20GB",
     tag: "1.440.000 đ / Tháng",
     availability: "Sẵn sàng cung cấp",
-    image: "/pkg_20gb.jpg",
+    image: "./pkg_20gb.jpg",
     description: "Gói cước mạng vệ tinh 20GB Data giá 1.440.000 đ / Tháng. Băng thông rộng tốc độ cao phục vụ liên lạc, quản lý tàu và thuyền viên làm việc trên biển.",
     specs: [
       "Dung lượng: 20GB / Tháng",
@@ -494,7 +494,7 @@ export const productsData = [
     name: "Gói Mạng Vệ Tinh Starlink Maritime 500GB",
     tag: "23.800.000 đ / Tháng",
     availability: "Gói cước doanh nghiệp / Tàu viễn dương",
-    image: "/pkg_500gb.jpg",
+    image: "./pkg_500gb.jpg",
     description: "Gói dữ liệu ưu tiên 500GB cho tàu viễn dương với giá 23.800.000 đ / Tháng. Đáp ứng nhu cầu truyền phát dữ liệu SEAView CCTV, quản lý hạm đội và kết nối internet băng thông rộng cho toàn bộ thuyền viên.",
     specs: [
       "Dung lượng: 500GB / Tháng",
@@ -511,7 +511,7 @@ export const productsData = [
     name: "Gói Mạng Vệ Tinh Starlink Maritime 800GB",
     tag: "33.200.000 đ / Tháng",
     availability: "Gói cước dung lượng siêu lớn",
-    image: "/pkg_800gb.jpg",
+    image: "./pkg_800gb.jpg",
     description: "Gói dữ liệu dung lượng cực lớn 800GB giá 33.200.000 đ / Tháng. Giải pháp kết nối vệ tinh toàn diện cho các đội tàu container, tàu dầu viễn dương và các công trình giàn khoan hải đảo.",
     specs: [
       "Dung lượng: 800GB / Tháng",
@@ -529,7 +529,7 @@ export const productsData = [
     subCategory: "Hệ thống SEACam Onboard",
     name: "Giải Pháp Camera Quan Sát Tàu Biển SEAView CCTV (Chống Cháy Nổ Ex-Proof)",
     availability: "Khảo sát & Lắp đặt 24/7",
-    image: "/cctv.jpg",
+    image: "./cctv.jpg",
     description: "Giải pháp camera quan sát SEAView CCTV mã hóa & nén dữ liệu logarit tiên tiến, cho phép xem trực tiếp video và truy xuất clip sự cố từ đất liền qua vệ tinh Starlink/VSAT mà không làm gián đoạn băng thông internet tàu.",
     specs: [
       "Hệ thống: SEACam Onboard & SEAView Shore Center",
@@ -549,7 +549,7 @@ export const productsData = [
     subCategory: "Phần mềm SEAView Shore",
     name: "Giấy Phép Phần Mềm Quản Lý SEAView Shore (Văn Phòng Trên Bờ)",
     availability: "Kích hoạt bản quyền 24/7",
-    image: "/cctv.jpg",
+    image: "./cctv.jpg",
     description: "Giấy phép phần mềm quản lý SEAView Shore dành cho chủ tàu & ban quản lý trên bờ: xem camera trực tiếp từ tất cả các tàu trong hạm đội, phát lại video đã ghi và nhận báo cáo ảnh chụp nhanh tự động.",
     specs: [
       "Phần mềm: SEAView Shore License",
@@ -605,7 +605,7 @@ export const newsArticles = [
     date: "21/08/2026",
     author: "Ban Kỹ Thuật Viễn Thông HOANG YEN MARINE HP",
     // readTime: "4 phút đọc",
-    thumbnail: "/vsat.jpg",
+    thumbnail: "./vsat.jpg",
     summary: "Mạng internet vệ tinh cho tàu biển (VSAT) là giải pháp phổ biến kết nối trực tiếp trên biển, giúp tàu duy trì truyền tải thoại, dữ liệu, fax, email và theo dõi hải trình.",
     content: `
       Mạng internet vệ tinh cho tàu biển, thường được gọi là **VSAT (Very Small Aperture Terminal)**, là một giải pháp phổ biến để cung cấp kết nối internet trên biển. Dưới đây là một số thông tin quan trọng về việc sử dụng mạng internet vệ tinh trên tàu biển:
@@ -630,7 +630,7 @@ export const newsArticles = [
     date: "21/08/2026",
     author: "Phòng Công Nghệ Vệ Tinh HOANG YEN MARINE HP",
     // readTime: "3 phút đọc",
-    thumbnail: "/phusongstarlink.jpg",
+    thumbnail: "./phusongstarlink.jpg",
     summary: "Starlink - dịch vụ internet vệ tinh thế hệ mới của SpaceX đã có mặt ở 113 quốc gia, cung cấp băng thông rộng tốc độ cao, độ trễ thấp cho khu vực viễn dương và đất liền.",
     content: `
       Starlink, dịch vụ internet vệ tinh của SpaceX, hiện đã có mặt tại 113 quốc gia trên toàn thế giới. Hệ thống cung cấp băng thông rộng tốc độ cao, độ trễ thấp cho cả khu vực nông thôn, thành thị và hải trình viễn dương.
@@ -653,7 +653,7 @@ export const newsArticles = [
     date: "21/08/2026",
     author: "Ban Kỹ Thuật HOANG YEN MARINE HP",
     // readTime: "5 phút đọc",
-    thumbnail: "/gioithieustarlink.jpg",
+    thumbnail: "./gioithieustarlink.jpg",
     summary: "Starlink là dự án internet băng thông rộng quỹ đạo thấp (LEO) phát triển bởi SpaceX, mang đến tốc độ từ 50 Mbps đến 220 Mbps với thiết lập đơn giản và kết nối khẩn cấp tức thì.",
     content: `
       Starlink là một dự án mạng vệ tinh được phát triển bởi SpaceX, với mục tiêu cung cấp dịch vụ Internet băng thông rộng toàn cầu, đặc biệt ở những khu vực xa xôi, hẻo lánh mà việc kết nối Internet truyền thống gặp nhiều khó khăn.
@@ -676,7 +676,7 @@ export const newsArticles = [
     date: "21/08/2026",
     author: "Ban Kỹ Thuật HOANG YEN MARINE HP",
     readTime: "4 phút đọc",
-    thumbnail: "/cctv.jpg",
+    thumbnail: "./cctv.jpg",
     summary: "Giải pháp SEAView CCTV sử dụng bộ mã hóa và thuật toán nén dữ liệu logarit giúp xem video trực tiếp, phát lại clip và tự động gửi snapshot qua vệ tinh mà không ảnh hưởng băng thông.",
     content: `
       Giải pháp **SEAView CCTV** đang sử dụng một bộ mã hóa và logarit nén dữ liệu cho phép người dùng trên bờ xem các cảnh quay video trực tiếp, truy xuất video đã ghi và thông báo ảnh chụp nhanh theo lịch trình cho người dùng để dễ dàng xem; mà không ảnh hưởng đến băng thông dữ liệu và ảnh hưởng đến các ứng dụng kinh doanh khác.
@@ -703,7 +703,7 @@ export const newsArticles = [
     date: "21/08/2026",
     author: "Ban Chuyển Đổi Số Hàng Hải HOANG YEN MARINE HP",
     readTime: "5 phút đọc",
-    thumbnail: "/pms_software.jpg",
+    thumbnail: "./pms_software.jpg",
     summary: "Dịch vụ tư vấn và triển khai chuyển đổi số đội tàu VCDS (CMS, VMS, PMS) giúp doanh nghiệp vận tải biển số hóa quản trị, tối ưu hải trình và tăng tốc cạnh tranh bền vững.",
     content: `
       Trong bối cảnh ngành vận tải biển đang đối mặt với những thách thức từ toàn cầu hóa, biến động chuỗi cung ứng và áp lực nâng cao hiệu quả vận hành, chuyển đổi số không còn là xu hướng mà đã trở thành yêu cầu cấp thiết để tăng tính cạnh tranh và phát triển bền vững. 

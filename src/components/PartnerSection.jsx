@@ -9,15 +9,15 @@ export default function PartnerSection() {
   const scrollRef = useRef(null);
 
   const baseLogos = [
-    "/partner1.png",
-    "/partner2.jpg",
-    "/partner3.jpg",
-    "/partner4.jpg",
-    "/partner5.jpg",
-    "/partner6.png",
-    "/partner7.png",
-    "/partner8.png",
-    "/partner9.jpg"
+    "./partner1.png",
+    "./partner2.jpg",
+    "./partner3.jpg",
+    "./partner4.jpg",
+    "./partner5.jpg",
+    "./partner6.png",
+    "./partner7.png",
+    "./partner8.png",
+    "./partner9.jpg"
   ];
 
   // Repeat logos 3 times to create a seamless infinite loop

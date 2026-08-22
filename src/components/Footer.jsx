@@ -40,7 +40,7 @@ export default function Footer({ onShowToast }) {
             <div className="flex items-center gap-3">
               <div className="relative overflow-hidden rounded-xl p-[2px] bg-gradient-to-tr from-orange-600 via-amber-500 to-yellow-400 shadow-md shadow-orange-500/20">
                 <img
-                  src="/MARINEHP.jpg"
+                  src="./MARINEHP.jpg"
                   alt="HOANG YEN MARINE HP"
                   className="w-10 h-10 object-cover rounded-[10px] bg-white"
                 />
