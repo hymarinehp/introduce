@@ -8,7 +8,8 @@ import {
   Phone, 
   Zap,
   MapPin,
-  ShieldCheck
+  ShieldCheck,
+  Loader2
 } from 'lucide-react';
 import { companyInfo } from '../data/mockData';
 import { sendQuoteToGoogleSheet } from '../services/googleSheet';
@@ -74,6 +75,19 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
         product,
         source: product ? `Popup Yêu Cầu Báo Giá (${product.name})` : "Popup Yêu Cầu Báo Giá Nhanh"
       });
+
+      // Clear / Reset form data
+      setFormData({
+        name: '',
+        vesselName: '',
+        phone: '',
+        email: '',
+        itemDetails: '',
+        quantity: '1',
+        portLocation: '',
+        urgency: 'Khẩn cấp (Trong 24 giờ)'
+      });
+      setErrors({});
     } catch (err) {
       console.error("Error sending quote:", err);
     } finally {
@@ -240,10 +254,13 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500 hover:from-orange-500 hover:to-amber-400 text-white font-extrabold text-sm shadow-lg shadow-orange-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
+            className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500 hover:from-orange-500 hover:to-amber-400 disabled:opacity-75 disabled:cursor-not-allowed text-white font-extrabold text-sm shadow-lg shadow-orange-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
           >
             {isSubmitting ? (
-              <span>Đang gửi thông tin...</span>
+              <>
+                <Loader2 className="w-5 h-5 text-white animate-spin" />
+                <span>Đang gửi thông tin lên hệ thống...</span>
+              </>
             ) : (
               <>
                 <Send className="w-4 h-4 text-white" />
