@@ -73,7 +73,6 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
       await sendQuoteToGoogleSheet({
         ...formData,
         product,
-        source: product ? `Popup Yêu Cầu Báo Giá (${product.name})` : "Popup Yêu Cầu Báo Giá Nhanh"
       });
 
       // Clear / Reset form data
@@ -95,7 +94,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
       onClose();
       onShowToast(
         product?.category === 'telecom-services' ? 'Yêu cầu tư vấn đã được tiếp nhận!' : 'Yêu cầu báo giá đã được tiếp nhận!',
-        `Phòng Thương mại & Kỹ thuật HOANG YEN MARINE HP sẽ liên hệ lại qua số ${formData.phone} trong vòng 15 - 30 phút.`
+        `HOANG YEN MARINE HP sẽ liên hệ cho bạn qua số ${formData.phone} trong thời gian sớm nhất.`
       );
     }
   };
@@ -127,7 +126,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
           </h3>
 
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-            Cam kết phản hồi và tư vấn kỹ thuật trực tiếp trong vòng 15 - 30 phút.
+            Cam kết phản hồi và tư vấn kỹ thuật trực tiếp trong thời gian sớm nhất.
           </p>
         </div>
 

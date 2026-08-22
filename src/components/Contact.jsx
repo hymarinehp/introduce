@@ -45,13 +45,12 @@ export default function Contact({ onShowToast }) {
 
     await sendQuoteToGoogleSheet({
       ...formData,
-      source: "Form Báo Giá Trực Tiếp (Contact Section)"
     });
 
     setIsSubmitting(false);
     onShowToast(
       'Gửi yêu cầu thành công!',
-      `Kỹ sư phụ trách HOANG YEN MARINE HP sẽ liên hệ lại với Quý khách qua số ${formData.phone} trong vòng 10-15 phút.`
+      `HOANG YEN MARINE HP sẽ liên hệ với Quý khách qua số ${formData.phone} trong thời gian sớm nhất.`
     );
     setFormData({
       name: '',
