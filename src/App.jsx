@@ -12,6 +12,7 @@ import ProductDetailModal from './components/ProductDetailModal';
 import ArticleModal from './components/ArticleModal';
 import Toast from './components/Toast';
 import { Phone, MessageSquareQuote, ChevronUp } from 'lucide-react';
+import { companyInfo } from './data/mockData';
 import { smoothScrollTo } from './utils/smoothScroll';
 
 export default function App() {
