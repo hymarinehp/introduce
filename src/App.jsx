@@ -12,7 +12,7 @@ import ProductDetailModal from './components/ProductDetailModal';
 import ArticleModal from './components/ArticleModal';
 import Toast from './components/Toast';
 import { Phone, MessageSquareQuote, ChevronUp } from 'lucide-react';
-import { companyInfo } from './data/mockData';
+import { smoothScrollTo } from './utils/smoothScroll';
 
 export default function App() {
   // Theme state: Default is 'light' as requested by the user
@@ -103,7 +103,7 @@ export default function App() {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    smoothScrollTo(0, 800);
   };
 
   return (

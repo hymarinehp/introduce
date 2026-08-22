@@ -10,16 +10,12 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { companyInfo, navLinks } from '../data/mockData';
+import { scrollToSectionId } from '../utils/smoothScroll';
 
 export default function Footer({ onShowToast }) {
 
   const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      const yOffset = -80;
-      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
+    scrollToSectionId(id, -80);
   };
 
   return (

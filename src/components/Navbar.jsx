@@ -9,6 +9,7 @@ import {
   Moon
 } from 'lucide-react';
 import { navLinks } from '../data/mockData';
+import { scrollToSectionId } from '../utils/smoothScroll';
 
 export default function Navbar({ activeSection, theme = 'light', toggleTheme }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,12 +29,7 @@ export default function Navbar({ activeSection, theme = 'light', toggleTheme }) 
 
   const scrollToSection = (id) => {
     setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      const yOffset = -80;
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
+    scrollToSectionId(id, -80);
   };
 
   const isDark = theme === 'dark';
