@@ -19,7 +19,7 @@ Chúng tôi tự hào là đối tác tin cậy của nhiều doanh nghiệp tro
   commitments: [
     "Dịch vụ tốt nhất",
     "Giá thành cạnh tranh nhất",
-    "Chất lượng theo đúng yêu cầu khách hàng"
+    "Chất lượng đạt chuẩn"
   ],
   stats: [
     { value: "100%", label: "Kỹ thuật viên tay nghề cao nhiều năm trên tàu" },
