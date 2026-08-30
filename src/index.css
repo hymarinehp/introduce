@@ -20,6 +20,8 @@
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #0ea5e9;
+  } */
+
   /* Prevent mobile input focus auto-zoom on iOS Safari & Android Chrome */
   @media screen and (max-width: 768px) {
     input,
