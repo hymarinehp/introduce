@@ -91,7 +91,7 @@ export default function Navbar({ activeSection, theme = 'light', toggleTheme }) 
           </nav>
 
           {/* Right Action: Day/Night Theme Toggle Switch */}
-          <div className="hidden sm:flex items-center">
+          <div className="flex items-center">
             <button
               onClick={toggleTheme}
               className={`px-3 py-2 rounded-xl border transition-all duration-300 flex items-center justify-center gap-2 ${
@@ -115,21 +115,7 @@ export default function Navbar({ activeSection, theme = 'light', toggleTheme }) 
           </div>
 
           {/* Mobile Actions: Theme button & Hamburger */}
-          <div className="flex sm:hidden items-center gap-2">
-            {/* Mobile Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className={`p-2 rounded-lg border transition-colors ${
-                isDark 
-                  ? 'bg-navy-900 border-sky-500/30 text-amber-300' 
-                  : 'bg-slate-100 border-slate-200 text-slate-700'
-              }`}
-              title="Chuyển chế độ sáng/tối"
-              aria-label="Chuyển đổi giao diện sáng/tối"
-            >
-              {isDark ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-sky-600" />}
-            </button>
-
+          <div className="flex lg:hidden items-center ml-2">
             {/* Hamburger button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -151,19 +137,6 @@ export default function Navbar({ activeSection, theme = 'light', toggleTheme }) 
         }`}
       >
         <div className="px-4 pt-3 pb-5 space-y-2">
-          
-          {/* Mobile Theme Indicator Bar */}
-          <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-slate-100 dark:bg-navy-900 border border-slate-200 dark:border-slate-800 text-xs font-semibold mb-3">
-            <span className="text-slate-600 dark:text-slate-300">Giao diện hiện tại:</span>
-            <button
-              onClick={toggleTheme}
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-white dark:bg-navy-950 border border-slate-300 dark:border-slate-700 text-sky-700 dark:text-amber-300 shadow-sm"
-            >
-              {isDark ? <Sun className="w-3.5 h-3.5 text-amber-400" /> : <Moon className="w-3.5 h-3.5 text-sky-600" />}
-              <span>{isDark ? 'Chế độ Tối (Đêm)' : 'Chế độ Sáng (Ngày)'}</span>
-            </button>
-          </div>
-
           {navLinks.map((link) => (
             <button
               key={link.id}

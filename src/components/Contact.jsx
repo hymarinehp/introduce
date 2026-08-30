@@ -81,9 +81,9 @@ export default function Contact({ onShowToast }) {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
-            Kết Nối Ngay Với{' '}
+            Kết nối ngay với{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-cyan-600 to-teal-600 dark:from-sky-400 dark:via-cyan-300 dark:to-teal-300">
-              Chúng Tôi
+              Chúng tôi
             </span>
           </h2>
         </div>
@@ -95,7 +95,7 @@ export default function Contact({ onShowToast }) {
             <div className="mb-6 sm:mb-8 space-y-1">
               <h3 className="text-base sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white flex items-center justify-center gap-2">
                 <Ship className="w-5 h-5 text-cyan-600 dark:text-cyan-400" />
-                <span>Yêu Cầu Báo Giá & Tư Vấn Kỹ Thuật</span>
+                <span>Yêu cầu Báo giá & Tư vấn kỹ thuật</span>
               </h3>
             </div>
 

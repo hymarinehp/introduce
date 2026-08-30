@@ -36,9 +36,9 @@ export default function About({ onOpenQuote }) {
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight transition-colors">
-            Cung Cấp Toàn Diện Vật Tư & Dịch Vụ Duy Trì{' '}
+            Cung cấp Vật tư & Dịch vụ {' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-amber-600">
-              Vận Hành Tàu Biển
+              Tàu biển
             </span>
           </h2>
         </div>
@@ -50,7 +50,7 @@ export default function About({ onOpenQuote }) {
               CAM KẾT THƯƠNG HIỆU HOÀNG YẾN MARINE HP
             </span>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-2">
-              Chúng Tôi Cam Kết Sẽ Cung Cấp Tới Quý Công Ty
+              Chúng tôi cam kết sẽ cung cấp tới Quý công ty
             </h3>
           </div>
 
@@ -188,7 +188,7 @@ export default function About({ onOpenQuote }) {
                   onClick={() => onOpenQuote()}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-sm shadow-md transition-all"
                 >
-                  <span>Gửi Yêu Cầu Báo Giá</span>
+                  <span>Gửi yêu cầu báo giá</span>
                   <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>

@@ -84,11 +84,11 @@ export default function Products({
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight transition-colors">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500">
-              Cung Ứng Vật Tư
+              Cung ứng vật tư
             </span>
             {' '}&{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500">
-              Dịch Vụ Kỹ thuật
+              Dịch vụ kỹ thuật
             </span>
           </h2>
         </div>
@@ -106,7 +106,7 @@ export default function Products({
                 }`}
             >
               <Cog className="w-4 h-4 text-amber-300 shrink-0" />
-              <span className="truncate">ME Spares Parts</span>
+              <span className="truncate">ME spares parts</span>
             </button>
 
             {/* Tab 2: Docking Spares */}
@@ -118,7 +118,7 @@ export default function Products({
                 }`}
             >
               <Anchor className="w-4 h-4 text-amber-300 shrink-0" />
-              <span className="truncate">Docking Spares</span>
+              <span className="truncate">Docking spares</span>
             </button>
 
             {/* Tab 3: Repair Services */}
@@ -130,7 +130,7 @@ export default function Products({
                 }`}
             >
               <Wrench className="w-4 h-4 text-amber-300 shrink-0" />
-              <span className="truncate">Dịch Vụ Sửa Chữa</span>
+              <span className="truncate">Dịch vụ sửa chữa</span>
             </button>
 
             {/* Tab 4: Telecom Services */}
@@ -142,7 +142,7 @@ export default function Products({
                 }`}
             >
               <Radio className="w-4 h-4 text-amber-300 shrink-0" />
-              <span className="truncate">Mạng Vệ Tinh</span>
+              <span className="truncate">Mạng vệ tinh</span>
             </button>
 
             {/* Tab 5: SEAView Solutions */}
@@ -154,7 +154,7 @@ export default function Products({
                 }`}
             >
               <Camera className="w-4 h-4 text-amber-300 shrink-0" />
-              <span className="truncate">Giải Pháp SEAView</span>
+              <span className="truncate">Giải pháp SEAView</span>
             </button>
 
           </div>

@@ -82,7 +82,7 @@ export default function PartnerSection() {
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight transition-colors">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-cyan-600 to-teal-600 dark:from-sky-400 dark:via-cyan-300 dark:to-teal-300">
-              Đối Tác & Chủ Tàu Tin Cậy
+              Đối tác & Chủ tàu tin cậy
             </span>
           </h2>
 
