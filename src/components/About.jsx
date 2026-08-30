@@ -72,7 +72,7 @@ export default function About({ onOpenQuote }) {
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h3 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
-              4 Mảng Dịch Vụ Trọng Tâm
+              Các mảng dịch vụ trọng tâm
             </h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
               Giải pháp trọn gói đáp ứng đầy đủ quy chuẩn kỹ thuật hàng hải quốc tế
