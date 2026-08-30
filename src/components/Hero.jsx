@@ -139,16 +139,6 @@ export default function Hero({ onOpenQuote, onSelectTab }) {
                 <div className="w-[55%] h-[2.5px] bg-gradient-to-r from-transparent via-sky-500 to-cyan-400 dark:via-cyan-400 dark:to-cyan-300 origin-left shadow-[0_0_12px_#38bdf8]"></div>
               </div>
 
-              {/* Simulated Vessel Targets */}
-              <div className="absolute top-[22%] right-[10%] flex items-center gap-2 text-xs font-mono font-bold text-sky-700 dark:text-cyan-300 animate-pulse">
-                <span className="w-2.5 h-2.5 rounded-full bg-sky-600 dark:bg-cyan-400 shadow-[0_0_10px_#0ea5e9]"></span>
-                <span>Tàu PVT HERCULES</span>
-              </div>
-              <div className="absolute bottom-[22%] left-[8%] flex items-center gap-2 text-xs font-mono font-bold text-sky-700 dark:text-cyan-300">
-                <span className="w-2.5 h-2.5 rounded-full bg-sky-600 dark:bg-cyan-400 shadow-[0_0_10px_#0ea5e9]"></span>
-                <span>Tàu VOSCO STAR</span>
-              </div>
-
               {/* Center Vessel Node */}
               <div className="relative z-10 w-12 h-12 rounded-full bg-white dark:bg-navy-950 border-2 border-sky-600 dark:border-cyan-400 flex items-center justify-center shadow-[0_0_16px_rgba(14,165,233,0.5)]">
                 <Ship className="w-6 h-6 text-sky-600 dark:text-cyan-300" />
