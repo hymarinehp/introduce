@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  X, 
-  Check, 
-  FileText, 
-  ShieldCheck, 
-  Layers, 
-  Clock, 
-  Phone, 
+import {
+  X,
+  Check,
+  FileText,
+  ShieldCheck,
+  Layers,
+  Clock,
+  Phone,
   Zap,
   Award,
   Sparkles,
@@ -20,7 +20,7 @@ export default function ProductDetailModal({ product, onClose, onOpenQuote }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-md animate-fadeIn">
       <div className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-sky-500/40 shadow-2xl text-slate-900 dark:text-white p-6 sm:p-8 transition-colors">
-        
+
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -32,7 +32,7 @@ export default function ProductDetailModal({ product, onClose, onOpenQuote }) {
 
         {/* Modal Content */}
         <div className="space-y-6">
-          
+
           {/* Top Tag & Category */}
           <div className="flex flex-wrap items-center gap-2">
             <span className="px-3 py-1 text-xs font-bold bg-sky-100 dark:bg-cyan-950 text-sky-700 dark:text-cyan-300 rounded-md border border-sky-300 dark:border-cyan-500/40">
@@ -53,7 +53,7 @@ export default function ProductDetailModal({ product, onClose, onOpenQuote }) {
 
           {/* Grid: Image + Description */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-            
+
             <div className="md:col-span-6 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-slate-950 relative h-64">
               <img
                 src={product.image}
@@ -117,7 +117,7 @@ export default function ProductDetailModal({ product, onClose, onOpenQuote }) {
               >
                 Đóng
               </button>
-              
+
               <button
                 onClick={() => {
                   onClose();
@@ -125,17 +125,10 @@ export default function ProductDetailModal({ product, onClose, onOpenQuote }) {
                 }}
                 className="flex-1 sm:flex-none px-6 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-500 hover:from-orange-500 hover:to-amber-400 text-white text-xs font-extrabold shadow-lg shadow-orange-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                {product.category === 'telecom-services' ? (
-                  <>
-                    <Zap className="w-4 h-4" />
-                    <span>Mua Ngay Gói Cước Này</span>
-                  </>
-                ) : (
-                  <>
-                    <FileText className="w-4 h-4" />
-                    <span>Yêu Cầu Báo Giá Sản Phẩm Này</span>
-                  </>
-                )}
+                <>
+                  <FileText className="w-4 h-4" />
+                  <span>Yêu Cầu Báo Giá Sản Phẩm Này</span>
+                </>
               </button>
             </div>
           </div>

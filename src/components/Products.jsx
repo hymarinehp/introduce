@@ -101,8 +101,8 @@ export default function Products({
             <button
               onClick={() => handleTabChange('me-spares')}
               className={`flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 ${selectedTab === 'me-spares'
-                  ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                 }`}
             >
               <Cog className="w-4 h-4 text-amber-300 shrink-0" />
@@ -113,8 +113,8 @@ export default function Products({
             <button
               onClick={() => handleTabChange('docking-spares')}
               className={`flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 ${selectedTab === 'docking-spares'
-                  ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                 }`}
             >
               <Anchor className="w-4 h-4 text-amber-300 shrink-0" />
@@ -125,8 +125,8 @@ export default function Products({
             <button
               onClick={() => handleTabChange('repair-services')}
               className={`flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 ${selectedTab === 'repair-services'
-                  ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                 }`}
             >
               <Wrench className="w-4 h-4 text-amber-300 shrink-0" />
@@ -137,8 +137,8 @@ export default function Products({
             <button
               onClick={() => handleTabChange('telecom-services')}
               className={`flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 ${selectedTab === 'telecom-services'
-                  ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                 }`}
             >
               <Radio className="w-4 h-4 text-amber-300 shrink-0" />
@@ -149,8 +149,8 @@ export default function Products({
             <button
               onClick={() => handleTabChange('seaview-solutions')}
               className={`flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all duration-300 ${selectedTab === 'seaview-solutions'
-                  ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
+                ? 'bg-gradient-to-r from-orange-600 to-amber-500 text-white shadow-lg shadow-orange-500/30'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
                 }`}
             >
               <Camera className="w-4 h-4 text-amber-300 shrink-0" />
@@ -174,8 +174,8 @@ export default function Products({
                     key={idx}
                     onClick={() => setActiveSubCat(sub.startsWith("Tất cả") ? "Tất cả" : sub)}
                     className={`whitespace-nowrap px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-all ${isActive
-                        ? 'bg-orange-600 dark:bg-amber-500/20 text-white dark:text-amber-300 border border-orange-600 dark:border-amber-400/50 shadow-sm'
-                        : 'bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
+                      ? 'bg-orange-600 dark:bg-amber-500/20 text-white dark:text-amber-300 border border-orange-600 dark:border-amber-400/50 shadow-sm'
+                      : 'bg-slate-100 dark:bg-slate-900/80 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800'
                       }`}
                   >
                     {sub}
@@ -246,7 +246,7 @@ export default function Products({
                     </div>
 
                     {/* Product Name */}
-                    <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-amber-300 transition-colors leading-snug line-clamp-2">
+                    <h3 className="text-[19px] font-bold text-slate-900 dark:text-white group-hover:text-orange-600 dark:group-hover:text-amber-300 transition-colors leading-snug line-clamp-2">
                       {product.name}
                     </h3>
 
@@ -285,17 +285,10 @@ export default function Products({
                     onClick={() => onOpenQuote(product)}
                     className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white text-xs font-bold shadow-md shadow-orange-600/20 transition-all flex items-center justify-center gap-1.5"
                   >
-                    {product.category === 'telecom-services' ? (
-                      <>
-                        <Zap className="w-3.5 h-3.5 text-white" />
-                        <span>Mua ngay</span>
-                      </>
-                    ) : (
-                      <>
-                        <FileText className="w-3.5 h-3.5 text-white" />
-                        <span>Báo giá</span>
-                      </>
-                    )}
+                    <>
+                      <FileText className="w-3.5 h-3.5 text-white" />
+                      <span>Báo giá</span>
+                    </>
                   </button>
                 </div>
 

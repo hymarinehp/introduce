@@ -76,21 +76,12 @@ export default function Footer({ onShowToast }) {
                 </a>
               </div>
 
-              {/* Hotline 1 */}
+              {/* Hotline */}
               <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
                 <Phone className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                <span>Hotline 1: </span>
-                <a href={`tel:${companyInfo.hotlines[0].replace(/\s+/g, '')}`} className="font-bold text-slate-900 dark:text-white hover:text-orange-500 transition-colors">
-                  {companyInfo.hotlines[0]}
-                </a>
-              </div>
-
-              {/* Hotline 2 */}
-              <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <Phone className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0" />
-                <span>Hotline 2: </span>
-                <a href={`tel:${companyInfo.hotlines[1].replace(/\s+/g, '')}`} className="font-bold text-slate-900 dark:text-white hover:text-orange-500 transition-colors">
-                  {companyInfo.hotlines[1]}
+                <span>Hotline: </span>
+                <a href={`tel:${(companyInfo.hotline).replace(/\s+/g, '')}`} className="font-bold text-slate-900 dark:text-white hover:text-orange-500 transition-colors">
+                  {companyInfo.hotline}
                 </a>
               </div>
 

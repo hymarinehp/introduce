@@ -74,6 +74,19 @@ export default function App() {
     setQuoteModalOpen(true);
   };
 
+  // Lock body scroll when any modal is open
+  const isAnyModalOpen = quoteModalOpen || Boolean(detailProduct) || Boolean(activeArticle);
+  useEffect(() => {
+    if (isAnyModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isAnyModalOpen]);
+
   // Scroll listener for active section & Back to top button
   useEffect(() => {
     const handleScroll = () => {
@@ -109,10 +122,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-white transition-colors duration-300">
-      
+
       {/* Sticky Smart Navbar with Theme Toggle */}
-      <Navbar 
-        onOpenQuote={() => handleOpenQuote()} 
+      <Navbar
+        onOpenQuote={() => handleOpenQuote()}
         activeSection={activeSection}
         theme={theme}
         toggleTheme={toggleTheme}
@@ -120,20 +133,20 @@ export default function App() {
 
       {/* Main Content Sections */}
       <main className="flex-grow">
-        
+
         {/* A. Hero Section */}
-        <Hero 
-          onOpenQuote={() => handleOpenQuote()} 
+        <Hero
+          onOpenQuote={() => handleOpenQuote()}
           onSelectTab={(tabId) => setSelectedProductTab(tabId)}
         />
 
         {/* B. About Us & 4 Core Values */}
-        <About 
+        <About
           onOpenQuote={() => handleOpenQuote()}
         />
 
         {/* C. Products & Satellite Solutions */}
-        <Products 
+        <Products
           selectedTab={selectedProductTab}
           setSelectedTab={setSelectedProductTab}
           onOpenQuote={(product) => handleOpenQuote(product)}
@@ -141,7 +154,7 @@ export default function App() {
         />
 
         {/* D. Maritime Insights & News */}
-        <News 
+        <News
           onSelectArticle={(article) => setActiveArticle(article)}
         />
 
@@ -149,14 +162,14 @@ export default function App() {
         <PartnerSection />
 
         {/* F. Contact & Emergency 24/7 Support Form */}
-        <Contact 
+        <Contact
           onShowToast={showToastNotification}
         />
 
       </main>
 
       {/* G. Footer */}
-      <Footer 
+      <Footer
         onShowToast={showToastNotification}
       />
 
@@ -164,7 +177,7 @@ export default function App() {
       <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end">
         {/* Hotline 24/7 */}
         <a
-          href={`tel:${companyInfo.hotline247.replace(/\s+/g, '')}`}
+          href={`tel:${(companyInfo.hotline).replace(/\s+/g, '')}`}
           className="relative group flex items-center"
         >
           <span className="absolute right-full mr-3 px-3 py-1.5 rounded-lg bg-slate-900/90 dark:bg-slate-800/95 text-white text-xs font-semibold whitespace-nowrap shadow-lg backdrop-blur opacity-0 pointer-events-none group-hover:opacity-100 transition-all duration-200 translate-x-2 group-hover:translate-x-0 border border-slate-700/50">
@@ -235,9 +248,9 @@ export default function App() {
       />
 
       {/* Toast Feedback */}
-      <Toast 
-        toast={toast} 
-        onClose={() => setToast({ ...toast, show: false })} 
+      <Toast
+        toast={toast}
+        onClose={() => setToast({ ...toast, show: false })}
       />
 
     </div>

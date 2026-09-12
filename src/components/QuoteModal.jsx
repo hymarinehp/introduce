@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  X, 
-  Send, 
-  FileText, 
-  Ship, 
-  CheckCircle, 
-  Phone, 
+import {
+  X,
+  Send,
+  FileText,
+  Ship,
+  CheckCircle,
+  Phone,
   Zap,
   MapPin,
   ShieldCheck,
@@ -31,12 +31,9 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
 
   useEffect(() => {
     if (product) {
-      const isTelecom = product.category === 'telecom-services';
       setFormData(prev => ({
         ...prev,
-        itemDetails: isTelecom
-          ? `Đăng ký & tư vấn gói cước: ${product.name}${product.tag ? ` (${product.tag})` : ''}`
-          : `Yêu cầu báo giá: ${product.name}${product.tag ? ` (${product.tag})` : ''}`
+        itemDetails: `Yêu cầu báo giá: ${product.name}${product.tag ? ` (${product.tag})` : ''}`
       }));
     } else {
       setFormData(prev => ({
@@ -93,18 +90,16 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
       setIsSubmitting(false);
       onClose();
       onShowToast(
-        product?.category === 'telecom-services' ? 'Yêu cầu tư vấn đã được tiếp nhận!' : 'Yêu cầu báo giá đã được tiếp nhận!',
+        'Yêu cầu báo giá đã được tiếp nhận!',
         `HOANG YEN MARINE HP sẽ liên hệ cho bạn qua số ${formData.phone} trong thời gian sớm nhất.`
       );
     }
   };
 
-  const isTelecomProduct = product?.category === 'telecom-services';
-
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-md animate-fadeIn">
       <div className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-sky-500/40 shadow-2xl text-slate-900 dark:text-white p-6 sm:p-8 transition-colors">
-        
+
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -117,12 +112,12 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
         {/* Modal Header */}
         <div className="mb-6 space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-sky-100 dark:bg-cyan-950 text-sky-700 dark:text-cyan-300 text-xs font-bold uppercase tracking-wider border border-sky-300 dark:border-cyan-500/30">
-            {isTelecomProduct ? <Zap className="w-3.5 h-3.5" /> : <FileText className="w-3.5 h-3.5" />}
-            <span>{isTelecomProduct ? "Đăng Ký Mua Gói Cước" : "Yêu Cầu Báo Giá Tức Thì"}</span>
+            <FileText className="w-3.5 h-3.5" />
+            <span>Yêu Cầu Báo Giá Tức Thì</span>
           </div>
 
           <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white">
-            {product ? `${isTelecomProduct ? "Mua Ngay" : "Báo Giá"}: ${product.name}` : "Gửi Yêu Cầu Cung Ứng & Dịch Vụ Vệ Tinh"}
+            {product ? `Báo Giá: ${product.name}` : "Gửi Yêu Cầu Cung Ứng & Dịch Vụ Vệ Tinh"}
           </h3>
 
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
@@ -132,7 +127,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
 
         {/* Form Body */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
             {/* Contact Name */}
             <div>
@@ -143,10 +138,9 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
                 type="text"
                 // placeholder="VD: Trần Trọng Hải"
                 value={formData.name}
-                onChange={(e) => setFormData({...formData, name: e.target.value})}
-                className={`w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border ${
-                  errors.name ? 'border-red-500' : 'border-slate-300 dark:border-slate-700'
-                } text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400`}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className={`w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border ${errors.name ? 'border-red-500' : 'border-slate-300 dark:border-slate-700'
+                  } text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400`}
               />
               {errors.name && <p className="text-[11px] text-red-500 dark:text-red-400 mt-1">{errors.name}</p>}
             </div>
@@ -160,10 +154,9 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
                 type="tel"
                 // placeholder="VD: 0988 123 456"
                 value={formData.phone}
-                onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                className={`w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border ${
-                  errors.phone ? 'border-red-500' : 'border-slate-300 dark:border-slate-700'
-                } text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400`}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                className={`w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border ${errors.phone ? 'border-red-500' : 'border-slate-300 dark:border-slate-700'
+                  } text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400`}
               />
               {errors.phone && <p className="text-[11px] text-red-500 dark:text-red-400 mt-1">{errors.phone}</p>}
             </div>
@@ -179,7 +172,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
                 type="text"
                 // placeholder="VD: Tàu VIMC PACIFIC"
                 value={formData.vesselName}
-                onChange={(e) => setFormData({...formData, vesselName: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, vesselName: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400"
               />
             </div>
@@ -193,7 +186,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
                 type="email"
                 // placeholder="VD: ops@vimc-shipping.vn"
                 value={formData.email}
-                onChange={(e) => setFormData({...formData, email: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400"
               />
             </div>
@@ -209,7 +202,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
                 type="text"
                 // placeholder="VD: Tàu VIMC PACIFIC"
                 value={formData.portLocation}
-                onChange={(e) => setFormData({...formData, portLocation: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, portLocation: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400"
               />
             </div>
@@ -223,7 +216,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
                 type="text"
                 // placeholder="VD: Tàu VIMC PACIFIC"
                 value={formData.urgency}
-                onChange={(e) => setFormData({...formData, urgency: e.target.value})}
+                onChange={(e) => setFormData({ ...formData, urgency: e.target.value })}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400"
               />
             </div>
@@ -238,7 +231,7 @@ export default function QuoteModal({ isOpen, onClose, product, onShowToast }) {
               rows="3"
               // placeholder="Nhập mã phụ tùng, số lượng hoặc thông số mong muốn..."
               value={formData.itemDetails}
-              onChange={(e) => setFormData({...formData, itemDetails: e.target.value})}
+              onChange={(e) => setFormData({ ...formData, itemDetails: e.target.value })}
               className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder-slate-400 text-xs focus:outline-none focus:border-sky-500 dark:focus:border-cyan-400 resize-none"
             ></textarea>
           </div>

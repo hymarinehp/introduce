@@ -1,14 +1,14 @@
 import React from 'react';
-import { 
-  ShieldCheck, 
-  Radio, 
-  Headphones, 
-  Gauge, 
-  CheckCircle, 
-  Anchor, 
-  Award, 
-  Clock, 
-  MapPin, 
+import {
+  ShieldCheck,
+  Radio,
+  Headphones,
+  Gauge,
+  CheckCircle,
+  Anchor,
+  Award,
+  Clock,
+  MapPin,
   Phone,
   Mail,
   Cog,
@@ -21,20 +21,20 @@ import { companyInfo, coreServicesList } from '../data/mockData';
 export default function About({ onOpenQuote }) {
   return (
     <section id="about" className="py-16 lg:py-20 bg-white dark:bg-slate-900 text-slate-800 dark:text-white relative overflow-hidden transition-colors duration-300">
-      
+
       {/* Background Ambience */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-sky-400/10 dark:bg-sky-600/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400/10 dark:bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-100 dark:bg-cyan-950/80 border border-sky-300 dark:border-cyan-500/30 text-sky-700 dark:text-cyan-400 text-xs font-bold uppercase tracking-wider">
             <Anchor className="w-3.5 h-3.5" />
             <span>Về Chúng Tôi – HOANG YEN MARINE HP</span>
           </div>
-          
+
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight transition-colors">
             Cung cấp Vật tư & Dịch vụ {' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-amber-600">
@@ -81,7 +81,7 @@ export default function About({ onOpenQuote }) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreServicesList.map((svc) => (
-              <div 
+              <div
                 key={svc.id}
                 className="group relative rounded-2xl bg-slate-50 dark:bg-navy-950/80 border border-slate-200 dark:border-slate-800 hover:border-orange-500 dark:hover:border-amber-500/50 p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-orange-500/10 flex flex-col justify-between"
               >
@@ -125,7 +125,7 @@ export default function About({ onOpenQuote }) {
         {/* Contact Info & Office Address Box */}
         <div className="rounded-2xl bg-white dark:bg-navy-900/90 border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm transition-colors">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
+
             {/* Left Info */}
             <div className="lg:col-span-6 space-y-4">
               {/* Brand Logo */}
@@ -150,7 +150,7 @@ export default function About({ onOpenQuote }) {
               <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
                 Công Ty TNHH Hoàng Yến Marine HP
               </h3>
-              
+
               <div className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 text-sky-600 dark:text-cyan-400 shrink-0 mt-1" />
@@ -168,17 +168,11 @@ export default function About({ onOpenQuote }) {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3">
-                  <Phone className="w-4 h-4 text-sky-600 dark:text-cyan-400 shrink-0 mt-1" />
+                <div className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-sky-600 dark:text-cyan-400 shrink-0" />
                   <div>
-                    <strong className="text-slate-900 dark:text-white block">Hotline 24/7:</strong>
-                    <div className="flex flex-col space-y-1 mt-0.5">
-                      {companyInfo.hotlines.map((h, i) => (
-                        <a key={i} href={`tel:${h.replace(/\s+/g, '')}`} className="font-semibold text-sky-600 dark:text-cyan-400 hover:underline font-mono">
-                          {h}
-                        </a>
-                      ))}
-                    </div>
+                    <strong className="text-slate-900 dark:text-white">Hotline 24/7: </strong>
+                    <a href={`tel:${(companyInfo.hotline).replace(/\s+/g, '')}`} className="text-sky-600 dark:text-cyan-400 font-medium hover:underline">{companyInfo.hotline}</a>
                   </div>
                 </div>
               </div>

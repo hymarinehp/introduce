@@ -22,7 +22,6 @@ export default function PartnerSection() {
     "./partner3.jpg",
     "./partner4.jpg",
     "./partner5.jpg",
-    "./partner6.png",
     "./partner7.png",
     "./partner8.png",
     "./partner9.jpg"

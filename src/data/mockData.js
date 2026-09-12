@@ -1,19 +1,17 @@
 export const companyInfo = {
   name: "HOANG YEN MARINE HP",
   legalName: "CÔNG TY TNHH HOÀNG YẾN MARINE HP",
-  shortDescription: "Công ty chúng tôi chuyên cung cấp vật tư tàu biển và dịch vụ mạng vệ tinh, với sứ mệnh hỗ trợ ngành hàng hải trong việc tối ưu hóa hoạt động và nâng cao hiệu quả kinh doanh. Đội ngũ nhân viên chuyên nghiệp và giàu kinh nghiệm cam kết dịch vụ khách hàng tuyệt vời và hỗ trợ kỹ thuật 24/7.",
-  fullDescription: `Công ty chúng tôi chuyên cung cấp vật tư tàu biển và dịch vụ mạng vệ tinh, với sứ mệnh hỗ trợ ngành hàng hải trong việc tối ưu hóa hoạt động và nâng cao hiệu quả kinh doanh. Chúng tôi cung cấp các sản phẩm chất lượng cao như thiết bị vật tư chính hãng, và các loại vật tư chuyên dụng khác phục vụ cho nhu cầu của khách hàng.
+  shortDescription: "Công ty chúng tôi chuyên cung cấp vật tư tàu biển, phần mềm và dịch vụ mạng vệ tinh, với sứ mệnh hỗ trợ ngành hàng hải trong việc tối ưu hóa hoạt động và nâng cao hiệu quả kinh doanh. Đội ngũ nhân viên chuyên nghiệp và giàu kinh nghiệm cam kết dịch vụ khách hàng tuyệt vời và hỗ trợ kỹ thuật 24/7.",
+  fullDescription: `Công ty chúng tôi chuyên cung cấp vật tư tàu biển, phần mềm và dịch vụ mạng vệ tinh, với sứ mệnh hỗ trợ ngành hàng hải trong việc tối ưu hóa hoạt động và nâng cao hiệu quả kinh doanh. Chúng tôi cung cấp các sản phẩm chất lượng cao như thiết bị vật tư chính hãng, và các loại vật tư chuyên dụng khác phục vụ cho nhu cầu của khách hàng.
 
 Ngoài ra, với dịch vụ mạng vệ tinh tiên tiến, chúng tôi mang đến khả năng kết nối ổn định, nhanh chóng, giúp khách hàng duy trì liên lạc và truy cập dữ liệu từ xa một cách hiệu quả. Đội ngũ nhân viên chuyên nghiệp và giàu kinh nghiệm của chúng tôi cam kết đảm bảo dịch vụ khách hàng tuyệt vời và hỗ trợ kỹ thuật 24/7.
 
 Chúng tôi tự hào là đối tác tin cậy của nhiều doanh nghiệp trong ngành hàng hải, góp phần thúc đẩy sự phát triển bền vững và an toàn cho hoạt động trên biển. Hãy liên hệ với chúng tôi để biết thêm thông tin và khám phá các giải pháp tối ưu cho nhu cầu của bạn.`,
   foundedYear: 2014,
-  hotline247: "+84 787 208 186",
-  hotlineTech: "+84 795 363 186",
-  hotlines: ["+84 787 208 186", "+84 795 363 186"],
+  hotline: "+84 795 363 186",
   emailQuote: "sales@hoangyenmarinehp.com",
   emailTech: "sales@hoangyenmarinehp.com",
-  mainAddress: "No. 1B/8/56 Phuong Luu Street, Van My Ward, Ngo Quyen Dist, Haiphong City, Vietnam",
+  mainAddress: "Room 4.7, 4th Floor, Khanh Hoi Building, Lot 2/3C Le Hong Phong Street, Ngo Quyen Ward, Hai Phong City, Vietnam",
   workingHours: "Hỗ trợ Kỹ thuật & Báo giá 24/7",
   certifications: ["CO/CQ Certified", "Class Approved (DNV, VR, NK)", "Starlink & VSAT Authorized", "SEAView CCTV Partner"],
   commitments: [
@@ -424,13 +422,11 @@ export const productsData = [
     category: "telecom-services",
     subCategory: "Gói Starlink Maritime",
     name: "Gói Mạng Vệ Tinh Starlink Maritime 1GB / Tháng",
-    tag: "72.000 đ / Tháng",
     availability: "Kích hoạt nhanh 24/7",
     image: "./pkg_1gb.jpg",
     description: "Gói cước dữ liệu mạng vệ tinh Starlink Maritime 1GB/Tháng với chi phí tiết kiệm 72.000 đ / Tháng. Phù hợp duy trì kết nối cho tàu hàng, tàu cá, du thuyền.",
     specs: [
       "Dung lượng: 1GB / Tháng",
-      "Chi phí: 72.000 đ / Tháng",
       "Băng thông: Tốc độ cao Starlink Maritime",
       "Phạm vi: Phủ sóng toàn cầu trên biển"
     ],
@@ -440,14 +436,12 @@ export const productsData = [
     id: "prod-telecom-2",
     category: "telecom-services",
     subCategory: "Gói Starlink Maritime",
-    name: "Gói Mạng Vệ Tinh Starlink Maritime 5GB",
-    tag: "360.000 đ / Tháng",
+    name: "Gói Mạng Vệ Tinh Starlink Maritime 5GB / Tháng",
     availability: "Sẵn sàng kích hoạt",
     image: "./pkg_5gb.jpg",
     description: "Gói dữ liệu mạng vệ tinh Starlink Maritime 5GB chỉ 360.000 đ / Tháng. Đảm bảo tốc độ truy cập internet ổn định và kết nối mượt mà.",
     specs: [
       "Dung lượng: 5GB / Tháng",
-      "Chi phí: 360.000 đ / Tháng",
       "Hạ tầng: Mạng vệ tinh quỹ đạo tầm thấp (LEO)",
       "Tốc độ: 25Mbps - 220Mbps"
     ],
@@ -457,14 +451,12 @@ export const productsData = [
     id: "prod-telecom-3",
     category: "telecom-services",
     subCategory: "Gói Starlink Maritime",
-    name: "Gói Mạng Vệ Tinh Starlink Maritime 10GB",
-    tag: "720.000 đ / Tháng",
+    name: "Gói Mạng Vệ Tinh Starlink Maritime 10GB / Tháng",
     availability: "Kích hoạt tức thì",
     image: "./pkg_10gb.jpg",
-    description: "Gói dữ liệu mạng vệ tinh 10GB với giá 720.000 đ / Tháng. Giải pháp kết nối internet vệ tinh tốc độ cao cho thuyền viên và ban quản lý tàu.",
+    description: "Gói dữ liệu mạng vệ tinh 10GB Data. Giải pháp kết nối internet vệ tinh tốc độ cao cho thuyền viên và ban quản lý tàu.",
     specs: [
       "Dung lượng: 10GB / Tháng",
-      "Chi phí: 720.000 đ / Tháng",
       "Băng thông: Tối đa 220Mbps",
       "Hệ thống: Starlink & VSAT Marine"
     ],
@@ -474,14 +466,12 @@ export const productsData = [
     id: "prod-telecom-4",
     category: "telecom-services",
     subCategory: "Gói Starlink Maritime",
-    name: "Gói Mạng Vệ Tinh Starlink Maritime 20GB",
-    tag: "1.440.000 đ / Tháng",
+    name: "Gói Mạng Vệ Tinh Starlink Maritime 20GB / Tháng",
     availability: "Sẵn sàng cung cấp",
     image: "./pkg_20gb.jpg",
-    description: "Gói cước mạng vệ tinh 20GB Data giá 1.440.000 đ / Tháng. Băng thông rộng tốc độ cao phục vụ liên lạc, quản lý tàu và thuyền viên làm việc trên biển.",
+    description: "Gói cước mạng vệ tinh 20GB Data. Băng thông rộng tốc độ cao phục vụ liên lạc, quản lý tàu và thuyền viên làm việc trên biển.",
     specs: [
       "Dung lượng: 20GB / Tháng",
-      "Chi phí: 1.440.000 đ / Tháng",
       "Tốc độ: Download lên tới 220Mbps",
       "Phủ sóng: Toàn cầu trên hải trình"
     ],
@@ -491,14 +481,12 @@ export const productsData = [
     id: "prod-telecom-5",
     category: "telecom-services",
     subCategory: "Gói Starlink Maritime",
-    name: "Gói Mạng Vệ Tinh Starlink Maritime 500GB",
-    tag: "23.800.000 đ / Tháng",
+    name: "Gói Mạng Vệ Tinh Starlink Maritime 500GB / Tháng",
     availability: "Gói cước doanh nghiệp / Tàu viễn dương",
     image: "./pkg_500gb.jpg",
-    description: "Gói dữ liệu ưu tiên 500GB cho tàu viễn dương với giá 23.800.000 đ / Tháng. Đáp ứng nhu cầu truyền phát dữ liệu SEAView CCTV, quản lý hạm đội và kết nối internet băng thông rộng cho toàn bộ thuyền viên.",
+    description: "Gói dữ liệu ưu tiên 500GB Data cho tàu viễn dương. Đáp ứng nhu cầu truyền phát dữ liệu SEAView CCTV, quản lý hạm đội và kết nối internet băng thông rộng cho toàn bộ thuyền viên.",
     specs: [
       "Dung lượng: 500GB / Tháng",
-      "Chi phí: 23.800.000 đ / Tháng",
       "Băng thông: Ưu tiên cao nhất Starlink Fleet",
       "Ứng dụng: SEAView CCTV & Vận hành tàu viễn dương"
     ],
@@ -508,14 +496,12 @@ export const productsData = [
     id: "prod-telecom-6",
     category: "telecom-services",
     subCategory: "Gói Starlink Maritime",
-    name: "Gói Mạng Vệ Tinh Starlink Maritime 800GB",
-    tag: "33.200.000 đ / Tháng",
+    name: "Gói Mạng Vệ Tinh Starlink Maritime 800GB / Tháng",
     availability: "Gói cước dung lượng siêu lớn",
     image: "./pkg_800gb.jpg",
-    description: "Gói dữ liệu dung lượng cực lớn 800GB giá 33.200.000 đ / Tháng. Giải pháp kết nối vệ tinh toàn diện cho các đội tàu container, tàu dầu viễn dương và các công trình giàn khoan hải đảo.",
+    description: "Gói dữ liệu dung lượng cực lớn 800GB Data. Giải pháp kết nối vệ tinh toàn diện cho các đội tàu container, tàu dầu viễn dương và các công trình giàn khoan hải đảo.",
     specs: [
       "Dung lượng: 800GB / Tháng",
-      "Chi phí: 33.200.000 đ / Tháng",
       "Kết nối: Ưu tiên băng thông Starlink LEO & VSAT",
       "Tốc độ: Lên tới 220Mbps liên tục"
     ],
